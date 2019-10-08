@@ -30,6 +30,16 @@ The following diagram shows how the protocol works in a simplified way:
 
 ---
 
+### Guess Strategies
+There are three main strategies used by the program:
+- Dictionary Attack
+- Random Attack
+- Exhaustive Search Attack
+
+##### Note: More details on the implementations of the search strategies are explained in the [code file](https://github.com/nickangmc/password-cracker/blob/master/guess_strategies.c). 
+
+---
+
 ### File structure in this repo
 - Main password-cracking program: 
   - _crack.c_
