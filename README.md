@@ -22,7 +22,7 @@ The Diffie-Hellman Key Exchange program in this project does not work, as the se
 
 ### Diffie-Hellman Key Exchange Protocol
 
-The following diagram shows how the protocol works:
+The following diagram shows how the protocol works in a simplified way:
 
 ![Diffie-Hellman Protocol](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Diffie-Hellman_Key_Exchange.png/451px-Diffie-Hellman_Key_Exchange.png)
 
@@ -31,3 +31,35 @@ The following diagram shows how the protocol works:
 ---
 
 ### File structure in this repo
+- Main password-cracking program: 
+  - _crack.c_
+- Diffie-Hellman Key Exchange program: 
+  - _dh.c_
+- 4 and 6-character SHA256 hashes respectively:
+  - _pwd4sha256_
+  - _pwd6sha256_
+- Common password lists from free online resources: 
+  - _common_6_pwds.txt_
+  - _common_passwords.txt_
+- Cracked/Found passwords for both 4 and 6-character SHA256 hashes:
+  - _found_pwds.txt_
+- SHA256 functions (provided):
+  - _sha256.c_
+  - _sha256.h_
+- Program and SHA256 Helper functions:
+  - _guess_strategies.c_
+  - _guess_strategies.h_
+  - _sha256_hash_helper.c_
+  - _sha256_hash_helper.h_
+- Program to calculate the statistical distribution of letters and words amongst the common passwords:
+  - _char_freq_distribution.ipynb_
+  - _sequential-character-frequency-generator.ipynb_
+- Text file (used by main program) containing the info on the statistical distribution calculated
+  - _char_freq_distribution.txt_
+  - _sequential-character-freq.txt_
+  
+---
+
+### Project Outcome
+
+All the tasks and challenges within the scope of this project were completed.
